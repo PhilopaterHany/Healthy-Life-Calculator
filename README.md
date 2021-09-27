@@ -1,2 +1,2 @@
 # BMR-Calculator
-BMR &amp; Calorie Calculator with JavaScript
+Calculating BMR &amp; Daily Calorie Need &amp; Daily Macros Need

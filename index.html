@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--? Start Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <meta name="copyright" content="Philopater Hany" />
+        <meta name="author" content="Philopater Hany" />
+        <meta
+            name="description"
+            content="All About Basal Metabolic Rate, Calculations and Daily Needs."
+        />
+        <meta
+            name="keywords"
+            content="bmr, BMRcalculator, protein, carbohydrate, macros, basalmetabolicrate, calories, diet, bulking, cutting"
+        />
+        <!--? End Meta Tags -->
+        <!--! Start Page Title -->
+        <title>BMR Calculator</title>
+        <!--! End Page Title -->
+        <!--& Start Page Title Icon -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/calc.png" />
+        <!--& End Page Title Icon -->
+        <!--* Start Normalize Library -->
+        <link rel="stylesheet" href="css/normalize.min.css" />
+        <!--* End Normalize Library -->
+        <!--^ Start Font Awesome Library -->
+        <link rel="stylesheet" href="css/fontawesome.min.css" />
+        <!--^ End Font Awesome Library -->
+        <!--? Start CSS Files -->
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/jsresults.css" />
+        <!--? End CSS Files -->
+        <!--! Start Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin=""
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+        />
+        <!--! End Google Fonts -->
+    </head>
+    <body>
+        <!--& Start Header Section -->
+        <header>
+            <div class="container">
+                <img src="images/calc.png" />
+                <p>BMR<br />Calculator</p>
+            </div>
+        </header>
+        <!--& End Header Section -->
+        <!--* Start Introduction Section -->
+        <section class="intro">
+            <div class="container">
+                <h1 class="secH">Basal Metabolic Rate</h1>
+                <div>
+                    <p class="ques">What is BMR ?</p>
+                    <p class="ans">
+                        <span>Basal Metabolic Rate</span> is the number of
+                        calories your body uses to maintain vital functions,
+                        such as breathing, heart rate and brain function.
+                    </p>
+                </div>
+                <div>
+                    <p class="ques">How to calculate my BMR ?</p>
+                    <p class="ans">
+                        BMR can be calculated by many equations, but the most
+                        accurate one is
+                        <span>
+                            Harris-Benedict - Revised By Mifflin and St.Joer
+                        </span>
+                        .
+                    </p>
+                </div>
+                <div>
+                    <p class="ques">What do I need to calculate my BMR ?</p>
+                    <p class="ans">
+                        BMR depends on person's <span>age</span>,
+                        <span>height</span>, <span>weight</span> and
+                        <span>gender</span>; therfore everyone has a different
+                        BMR.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--* End Introduction Section -->
+        <hr />
+        <!--^ Start Images Section -->
+        <section class="gallery">
+            <div class="container">
+                <h1 class="secH">Gallery</h1>
+                <div class="content">
+                    <div data-cap="Basal Metabolic Rate">
+                        <img src="images/bmr.jpg" alt="Basal Metabolic Rate" />
+                    </div>
+                    <div data-cap="Healthy Nutrition">
+                        <img
+                            src="images/nutrition.jpg"
+                            alt="Healthy Nutrition"
+                        />
+                    </div>
+                    <div data-cap="Calorie & BMR Calculator">
+                        <img
+                            src="images/calories.jpg"
+                            alt="Calorie & BMR Calculator"
+                        />
+                    </div>
+                    <div data-cap="Basal Metabolic Rate">
+                        <img src="images/protein.jpg" alt="Protein" />
+                    </div>
+                    <div data-cap="Carbohydrate">
+                        <img src="images/carbs.jpg" alt="Carbohydrate" />
+                    </div>
+                    <div data-cap="Healthy Fats">
+                        <img src="images/fats.jpg" alt="Healthy Fats" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--^ End Images Section -->
+        <hr />
+        <!--? Start Calculation Section -->
+        <section class="calc">
+            <div class="container">
+                <h1 class="secH">Calculator</h1>
+                <form>
+                    <select>
+                        <option value="xy">Male</option>
+                        <option value="xx">Female</option>
+                    </select>
+                    <div class="age" data-word="years">
+                        <input type="number" id="age" />
+                        <span class="inp-border" id="a-inp-border"></span>
+                        <label class="holder" id="age-holder">Your Age</label>
+                    </div>
+                    <div class="height" data-word="cm">
+                        <input type="number" id="height" />
+                        <span class="inp-border" id="h-inp-border"></span>
+                        <label class="holder" id="height-holder">
+                            Your Height
+                        </label>
+                    </div>
+                    <div class="weight" data-word="kg">
+                        <input type="number" id="weight" />
+                        <span class="inp-border" id="w-inp-border"></span>
+                        <label class="holder" id="weight-holder">
+                            Your Weight
+                        </label>
+                    </div>
+                    <input type="submit" value="calculate" />
+                </form>
+            </div>
+        </section>
+        <!--? End Calculation Section -->
+        <!--! Start Footer Section -->
+        <footer>
+            <div class="container">
+                <div>Copyrights &copy; 2021 - All Rights Reserved &reg;</div>
+                <div>
+                    <p>
+                        Developed With <i class="fas fa-heart"></i> By
+                        <a
+                            href="https://github.com/PhilopaterHany"
+                            target="_blank"
+                        >
+                            Philopater Hany
+                        </a>
+                    </p>
+                    <p>
+                        Designed With <i class="fas fa-heart"></i> By
+                        <a
+                            href="https://github.com/Ali-Abdelkader118"
+                            target="_blank"
+                        >
+                            Ali Abdelkader
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!--! End Footer Section -->
+        <!--& Start Scroll To Top Button -->
+        <button id="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+        <!--& End Scroll To Top Button -->
+        <!--* Start JavaScript File -->
+        <script src="js/master.js"></script>
+        <!--* End JavaScript File -->
+    </body>
+</html>
