@@ -2,20 +2,20 @@
 
 ![BMR](https://i.ibb.co/3rNzcs0/bmr.jpg)
 
-- You Can Learn About BMR here.
+- You Can Learn About **BMR** here.
 
-- You Can Calculate Your BMR Using `Harris-Benedict - Revised By Mifflin and St.Joer Equation`.
+- You Can Calculate Your BMR Using **`Harris-Benedict - Revised By Mifflin and St.Joer Equation`**.
 
-- You Can Calculate Your Daily Protein intake.
+- You Can Calculate Your **Daily Protein Intake**.
 
-- You Can Calculate Your Daily Carbohydrate intake.
+- You Can Calculate Your **Daily Carbohydrate Intake**.
 
-- You Can Calculate Your Daily Fat intake.
+- You Can Calculate Your **Daily Fat Intake**.
 
-- Works For Both Genders.
+- Works For Both **Genders**.
 
-- Languages Used Are: HTML5 - CSS3 - JavaScript.
+- Languages Used Are: **HTML5** - **CSS3** - **JavaScript**.
 
-- Designed By [Ali Abdelkader](https://github.com/Ali-Abdelkader118/).
+- **Designed** By [**Ali Abdelkader**](https://github.com/Ali-Abdelkader118/).
 
-- Code By [Me](https://github.com/PhilopaterHany) 😆
+- **Developed/Coded** By [**Me**](https://github.com/PhilopaterHany) 😆
