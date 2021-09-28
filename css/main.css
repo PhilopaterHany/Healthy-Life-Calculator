@@ -238,7 +238,7 @@ header .container p {
     color: var(--secColor);
     border-color: var(--secColor);
 }
-@media (max-width: 659px) {
+@media (max-width: 767px) {
     .calc .container form select,
     .calc .container form .age,
     .calc .container form .height,
