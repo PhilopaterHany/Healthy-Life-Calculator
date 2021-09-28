@@ -101,7 +101,7 @@ calc.onclick = (e) => {
             bmr = 10 * weight.value + 6.25 * height.value - 5 * age.value + 5;
             prot = Math.round(weight.value * 1.5);
             carb = Math.round(weight.value * 6.8);
-            fat = Math.round(weight.value * 0.6);
+            fat = "30% Of Your Total Calories (1g of fat = 9 kCal)";
         } else if (gend.value === "xx") {
             // If All Fields Are Filled & Gender Is Female
             bmr = 10 * weight.value + 6.25 * height.value - 5 * age.value - 161;
