@@ -33,6 +33,7 @@ form .needs p span,
 form .note span {
     font-weight: bold;
 }
+form .needs,
 form .note {
     text-align: left;
 }
