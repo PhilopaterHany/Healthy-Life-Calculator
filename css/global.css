@@ -1,0 +1,181 @@
+:root {
+    --primColor: #001f3f;
+    --secColor: #2d89e6;
+    --mainDuration: 0.3s;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #d4d3d3;
+    font-family: "Cairo", sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #ddd;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--secColor);
+}
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+hr {
+    border-bottom: 10px ridge var(--secColor);
+}
+.container {
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 738px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 962px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@keyframes triggerR {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5px);
+        -webkit-transform: translateX(5px);
+        -moz-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+        -o-transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(5px);
+        -webkit-transform: translateX(5px);
+        -moz-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+        -o-transform: translateX(5px);
+    }
+}
+@keyframes triggerL {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+        -webkit-transform: translateX(-5px);
+        -moz-transform: translateX(-5px);
+        -ms-transform: translateX(-5px);
+        -o-transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        -o-transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-5px);
+        -webkit-transform: translateX(-5px);
+        -moz-transform: translateX(-5px);
+        -ms-transform: translateX(-5px);
+        -o-transform: translateX(-5px);
+    }
+}
+.secH {
+    position: relative;
+    left: 50%;
+    width: 65%;
+    padding-block: 10px;
+    background: linear-gradient(to left, #fff 50%, var(--primColor) 50%) right;
+    background-size: 200%;
+    border: 3px solid var(--primColor);
+    color: var(--primColor);
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: var(--mainDuration);
+    -webkit-transition: var(--mainDuration);
+    -moz-transition: var(--mainDuration);
+    -ms-transition: var(--mainDuration);
+    -o-transition: var(--mainDuration);
+}
+.secH::before,
+.secH::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primColor);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: var(--mainDuration);
+    -webkit-transition: var(--mainDuration);
+    -moz-transition: var(--mainDuration);
+    -ms-transition: var(--mainDuration);
+    -o-transition: var(--mainDuration);
+}
+.secH::before {
+    left: -30px;
+}
+.secH::after {
+    right: -30px;
+}
+.secH:hover {
+    color: #fff;
+    border-color: var(--secColor);
+    background-position: left;
+}
+.secH:hover::before {
+    animation-name: triggerR;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+.secH:hover::after {
+    animation-name: triggerL;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+@media (max-width: 320px) {
+    .secH {
+        letter-spacing: 0;
+    }
+}
