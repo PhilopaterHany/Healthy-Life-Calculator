@@ -10,7 +10,7 @@
         <meta name="author" content="Philopater Hany" />
         <meta
             name="description"
-            content="All About Basal Metabolic Rate, Calculations and Daily Needs."
+            content="All About Basal Metabolic Rate, Body Mass Index, Calculations and Daily Needs."
         />
         <meta
             name="keywords"
@@ -18,7 +18,7 @@
         />
         <!--? End Meta Tags -->
         <!--! Start Page Title -->
-        <title>BMR Calculator</title>
+        <title>Healthy Life Calculator</title>
         <!--! End Page Title -->
         <!--& Start Page Title Icon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/calc.png" />
@@ -52,16 +52,19 @@
         <header>
             <div class="container">
                 <img src="images/calc.png" />
-                <p>BMR<br />Calculator</p>
+                <p>Healthy Life<br />Calculator</p>
             </div>
         </header>
         <!--& End Header Section -->
-        <!--* Start Introduction Section -->
+        <!--* Start BMR Section -->
         <section class="intro">
             <div class="container">
                 <h1 class="secH">bmr</h1>
                 <div>
-                    <p class="ques">What is BMR ?</p>
+                    <p class="ques">
+                        What is BMR ?
+                        <i class="fas fa-chevron-down"></i>
+                    </p>
                     <p class="ans">
                         <span>Basal Metabolic Rate</span> is the number of
                         calories your body uses to maintain vital functions,
@@ -69,7 +72,10 @@
                     </p>
                 </div>
                 <div>
-                    <p class="ques">Why is BMR important ?</p>
+                    <p class="ques">
+                        Why is BMR important ?
+                        <i class="fas fa-chevron-down"></i>
+                    </p>
                     <p class="ans">
                         <span>BMR</span> indicates the number of calories a
                         person burns at rest. This info could be helpful for a
@@ -77,18 +83,25 @@
                     </p>
                 </div>
                 <div>
-                    <p class="ques">How to calculate my BMR ?</p>
+                    <p class="ques">
+                        How to calculate my BMR ?
+                        <i class="fas fa-chevron-down"></i>
+                    </p>
                     <p class="ans">
                         BMR can be calculated by many equations, but the most
                         accurate one is
                         <span>
                             Harris-Benedict - Revised By Mifflin and St.Joer
                         </span>
-                        .
+                        . You can calculate your <span>BMR</span> with the
+                        <span>calculate</span> at the bottom of the page.
                     </p>
                 </div>
                 <div>
-                    <p class="ques">What do I need to calculate my BMR ?</p>
+                    <p class="ques">
+                        What do I need to calculate my BMR ?
+                        <i class="fas fa-chevron-down"></i>
+                    </p>
                     <p class="ans">
                         BMR depends on person's <span>age</span>,
                         <span>height</span>, <span>weight</span> and
@@ -98,7 +111,53 @@
                 </div>
             </div>
         </section>
-        <!--* End Introduction Section -->
+        <!--* End BMR Section -->
+        <hr />
+        <!--? Start BMI Section -->
+        <section class="intro">
+            <div class="container">
+                <h1 class="secH">bmi</h1>
+                <div>
+                    <p class="ques">
+                        What Is BMI ?
+                        <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="ans">
+                        <span>Body Mass Index</span> is a value derived from the
+                        mass (weight) and height of a person.
+                    </p>
+                </div>
+                <div>
+                    <p class="ques">
+                        <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="ans"></p>
+                </div>
+                <div>
+                    <p class="ques">
+                        How Can I Calculate My BMI ?
+                        <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="ans">
+                        You can <span>calculate</span> your
+                        <span>BMI</span> with the calculator at the bottom of
+                        the page.
+                    </p>
+                </div>
+                <div>
+                    <p class="ques">
+                        What do I need to calculate my BMI ?
+                        <i class="fas fa-chevron-down"></i>
+                    </p>
+                    <p class="ans">
+                        <span>BMI</span> depends on person's
+                        <span>height</span> and <span>weight</span>; therfore
+                        everyone has a different BMI.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--? End BMI Section -->
         <hr />
         <!--^ Start Images Section -->
         <section class="gallery">
@@ -134,8 +193,33 @@
         </section>
         <!--^ End Images Section -->
         <hr />
+        <!--& Start Converter Section -->
+        <section class="math conv">
+            <div class="container">
+                <h1 class="secH">converter</h1>
+                <form>
+                    <div class="convW" data-word="lbs">
+                        <input type="number" id="convWeight" />
+                        <span class="inp-border" id="convW-inp-border"></span>
+                        <label class="holder" id="convW-holder">
+                            Your Weight
+                        </label>
+                    </div>
+                    <div class="convH" data-word="inches">
+                        <input type="number" id="convHeight" />
+                        <span class="inp-border" id="convH-inp-border"></span>
+                        <label class="holder" id="convH-holder">
+                            Your Height
+                        </label>
+                    </div>
+                    <input type="submit" value="convert" id="conv" />
+                </form>
+            </div>
+        </section>
+        <!--& End Converter Section -->
+        <hr />
         <!--? Start Calculation Section -->
-        <section class="calc">
+        <section class="math calc">
             <div class="container">
                 <h1 class="secH">calculator</h1>
                 <form>
@@ -162,7 +246,7 @@
                             Your Weight
                         </label>
                     </div>
-                    <input type="submit" value="calculate" />
+                    <input type="submit" value="calculate" id="calc" />
                 </form>
             </div>
         </section>
