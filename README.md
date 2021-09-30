@@ -22,4 +22,4 @@
 
 - **Developed/Coded** By [**Me**](https://github.com/PhilopaterHany) 😆
 
-- [**Live Link**](https://philopaterhany.github.io/BMR-Calculator/index.html)
+- [**Live Link**](https://philopaterhany.github.io/Healthy-Life-Calculator/index.html)
