@@ -1,10 +1,12 @@
-# (BMR - Calories - Protein - Carbohydrate - Fat) Calculator
-
-![BMR](https://i.ibb.co/3rNzcs0/bmr.jpg)
+# Healthy Life Calculator
 
 - You Can Learn About **BMR** here.
 
 - You Can Calculate Your BMR Using **`Harris-Benedict - Revised By Mifflin and St.Joer Equation`**.
+
+- You Can Calculate Your **BMI** here.
+
+- You Can Calculate Your **Body Fat Percentage** here.
 
 - You Can Calculate Your **Daily Protein Intake**.
 
