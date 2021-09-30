@@ -1,0 +1,116 @@
+.conv .container p.conv-er {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    margin-block: 20px;
+}
+.conv .container p.conv-er i {
+    position: relative;
+    top: 2px;
+    color: #f00;
+    margin-inline: 5px;
+    font-size: 18px;
+}
+@media (max-width: 321px) {
+    .conv .container p.conv-er i {
+        font-size: 15px;
+        top: 0;
+    }
+}
+.conv .container p.weightConv,
+.conv .container p.heightConv {
+    width: 100%;
+    text-align: center;
+    background-color: var(--secColor);
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    margin-block: 20px;
+}
+.conv .container p.weightConv span,
+.conv .container p.heightConv span {
+    font-weight: bold;
+}
+.conv .container div.allConv {
+    width: 100%;
+    text-align: center;
+    background-color: var(--secColor);
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    margin-block: 20px;
+}
+.conv .container div.allConv p {
+    margin-block: 10px;
+}
+.conv .container div.allConv p span,
+.conv .container div.allConv p span {
+    font-weight: bold;
+}
+.calc .container p.result-er {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+.calc .container p.result-er i {
+    position: relative;
+    top: 2px;
+    color: #f00;
+    margin-inline: 5px;
+    font-size: 18px;
+}
+.calc .container .result,
+.calc .container .needs,
+.calc .container .note {
+    width: 100%;
+    background-color: var(--secColor);
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.calc .container .result p,
+.calc .container .needs p,
+.calc .container .note p {
+    margin-block: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+.calc .container .result p::before,
+.calc .container .needs p::before,
+.calc .container .note p::before {
+    content: "\2022";
+    position: absolute;
+    top: -1.5px;
+    left: 0;
+}
+.calc .container .result p span,
+.calc .container .needs p span,
+.calc .container .note p span {
+    font-weight: bold;
+}
+.calc .container table {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.calc .container table thead tr th {
+    padding: 12px 0;
+    background-color: var(--secColor);
+    color: #fff;
+}
+.calc .container table tbody tr td {
+    border: 2px solid var(--secColor);
+    padding: 8px;
+}
+.calc .container table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+.calc .container table span {
+    font-weight: bold;
+}
