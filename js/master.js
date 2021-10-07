@@ -38,10 +38,8 @@ for (let i = 0; i < qArrowDown.length; i++) {
 }
 
 // First Question Is Opened By Default
-window.onload = () => {
-    document.querySelectorAll(".intro.bmr .container div p.ques i")[0].click();
-    document.querySelectorAll(".intro.bmi .container div p.ques i")[0].click();
-};
+document.querySelectorAll(".intro.bmr .container div p.ques i")[0].click();
+document.querySelectorAll(".intro.bmi .container div p.ques i")[0].click();
 
 // Removing [- + e] from input[type="number"]
 for (let i = 0; i < nums.length; i++) {
