@@ -1,31 +1,6 @@
-// Declaring Variables
+// Arrows Display Answers
 const qArrowDown = document.querySelectorAll(".ques i");
 const qAns = document.querySelectorAll(".ans");
-const convWeight = document.getElementById("convWeight");
-const convHeight = document.getElementById("convHeight");
-const convWHolder = document.getElementById("convW-holder");
-const convHHolder = document.getElementById("convH-holder");
-const convWB = document.getElementById("convW-inp-border");
-const convHB = document.getElementById("convH-inp-border");
-const conv = document.getElementById("conv");
-const age = document.getElementById("age");
-const height = document.getElementById("height");
-const weight = document.getElementById("weight");
-const gend = document.querySelector("select");
-const nums = document.querySelectorAll("input[type=number");
-const calc = document.getElementById("calc");
-const result = document.getElementById("result");
-const invalidChars = ["-", "+", "e"];
-const ageHolder = document.getElementById("age-holder");
-const heightHolder = document.getElementById("height-holder");
-const weightHolder = document.getElementById("weight-holder");
-const ageB = document.getElementById("a-inp-border");
-const heightB = document.getElementById("h-inp-border");
-const weightB = document.getElementById("w-inp-border");
-const scrllBtn = document.getElementById("to-top");
-let bmr, bmi, bmiClass, bodyFat, prot, carb, fat;
-
-// Arrows Display Answers
 for (let i = 0; i < qArrowDown.length; i++) {
     qArrowDown[i].onclick = () => {
         qAns[i].classList.toggle("show");
@@ -38,6 +13,8 @@ for (let i = 0; i < qArrowDown.length; i++) {
 }
 
 // Removing [- + e] from input[type="number"]
+const invalidChars = ["-", "+", "e"];
+const nums = document.querySelectorAll("input[type=number");
 for (let i = 0; i < nums.length; i++) {
     nums[i].addEventListener("input", () => {
         nums[i].value = nums[i].value.replace(/[e\+\-]/gi, "");
@@ -50,6 +27,12 @@ for (let i = 0; i < nums.length; i++) {
 }
 
 // Max Characters For Inputs
+const convWeight = document.getElementById("convWeight");
+const convHeight = document.getElementById("convHeight");
+const age = document.getElementById("age");
+const height = document.getElementById("height");
+const weight = document.getElementById("weight");
+const conv = document.getElementById("conv");
 convWeight.oninput = () => (convWeight.value = convWeight.value.slice(0, 5));
 convHeight.oninput = () => (convHeight.value = convHeight.value.slice(0, 5));
 age.oninput = () => (age.value = age.value.slice(0, 2));
@@ -57,6 +40,16 @@ height.oninput = () => (height.value = height.value.slice(0, 5));
 weight.oninput = () => (weight.value = weight.value.slice(0, 5));
 
 // Input Focus
+const convWHolder = document.getElementById("convW-holder");
+const convHHolder = document.getElementById("convH-holder");
+const convWB = document.getElementById("convW-inp-border");
+const convHB = document.getElementById("convH-inp-border");
+const ageHolder = document.getElementById("age-holder");
+const heightHolder = document.getElementById("height-holder");
+const weightHolder = document.getElementById("weight-holder");
+const ageB = document.getElementById("a-inp-border");
+const heightB = document.getElementById("h-inp-border");
+const weightB = document.getElementById("w-inp-border");
 function focusing(element, eleHolder, eleBorder) {
     element.onfocus = () => {
         eleHolder.classList.add("has-data");
@@ -140,6 +133,9 @@ conv.onclick = (e) => {
 };
 
 // Main Function For Creating Results Of BMR & BMI
+let bmr, bmi, bmiClass, bodyFat, prot, carb, fat;
+const gend = document.querySelector("select");
+const calc = document.getElementById("calc");
 calc.onclick = (e) => {
     // Preventing The Button From Submitting Data
     e.preventDefault();
@@ -311,6 +307,7 @@ calc.onclick = (e) => {
 };
 
 // Scroll To Top Button
+const scrllBtn = document.getElementById("to-top");
 window.onscroll = () => {
     window.scrollY >= 100
         ? (scrllBtn.style.right = "30px")
@@ -323,3 +320,6 @@ scrllBtn.onclick = () => {
         behavior: "smooth",
     });
 };
+
+// Putting Year at Footer
+document.querySelector("footer .year").innerHTML = new Date().getFullYear();
